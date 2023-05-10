@@ -21,7 +21,7 @@ public class BankApplication {
 
 
         //я не розумію чого цей код тут? ми ж самі повинні написати process, тому я заремила
-        //(пізно когось питати, 9 вечора)
+
 //        accounts.stream().filter(account -> account.getId().equals(accountId))
 //                .findAny().orElseThrow(WrongAccountException::new);
 //

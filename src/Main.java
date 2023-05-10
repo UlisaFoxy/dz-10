@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) {
         BankApplication bankApplication = new BankApplication();
         try {
-            //перевіряла по одному
+            //перевіряла по одному, не подобається як відпрацьовують два, написала у ДЗ
 
             //bankApplication.process("accountId000", 700, "SEK"); // +-- видає має рахунок в іншій валюті - переробити
-            //bankApplication.process("accountId003", 250, "SEK"); // ++-  right
-            bankApplication.process("accountId001", 50, "EUR");  //+++ видає має рахунок в іншій валюті - переробит
+            bankApplication.process("accountId003", 250, "SEK"); // ++-  right
+            //bankApplication.process("accountId001", 50, "EUR");  //+++ видає має рахунок в іншій валюті - переробит
             //bankApplication.process("accountId007", 777, "SEK");//---right
         } catch (WrongAccountException wrongAccountException) {
             System.out.println("Такого акаунту не існує");
